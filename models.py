@@ -12,7 +12,7 @@ class MyModel(nn.Module):
             nn.ReLU(),
             nn.Linear(512, 512),
             nn.ReLU(),
-            nn.Linear(512, 10)
+            nn.Linear(512, 50)#値を変更
         )
         
     def forward(self, x):
