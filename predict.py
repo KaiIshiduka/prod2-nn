@@ -27,14 +27,14 @@ image = image.unsqueeze(dim=0)
 
 model.eval()
 with torch.no_grad():
-    logits = model(image)
+    logitss = model(image)
     
-print(logits)
+print(logitss)
 
-plt.bar(range(len(logits[0])), logits[0])
+plt.bar(range(len(logitss[0])), logitss[0])
 plt.show()
 
-probs = logits.softmax(dim=1)
+probs = logitss.softmax(dim=1)
 plt.bar(range(len(probs[0])), probs[0])
 plt.ylim(0, 1)
 plt.show()
