@@ -1,7 +1,6 @@
 from torch import nn
 import models
 import torch
-
 class MyModel(nn.Module):
     def __init__(self):
         super().__init__()
