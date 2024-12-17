@@ -20,7 +20,6 @@ ds_train = datasets.FashionMNIST(
         transforms.ToImage(),
         transforms.ToDtype(torch.float32, scale=True)])
 )
-
 image, target = ds_train[0]
 
 image = image.unsqueeze(dim=0)
